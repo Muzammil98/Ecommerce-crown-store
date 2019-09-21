@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 import SideDrawer from "./SideDrawer";
 import AppBar from "@material-ui/core/AppBar";

@@ -5,14 +5,20 @@ import { Route, Switch } from "react-router-dom";
 // Components
 import Header from "./components/header_footer/Header";
 import Homepage from "./pages/homepage/Homepage";
+import Shop from "./pages/shop/shop";
 function App() {
   return (
-    <React.Fragment>
+    <div
+      style={{
+        marginTop: "100px"
+      }}
+    >
       <Header />
       <Switch>
         <Route exact path="/" component={Homepage} />
+        <Route path="/shop" component={Shop} />
       </Switch>
-    </React.Fragment>
+    </div>
   );
 }
 
