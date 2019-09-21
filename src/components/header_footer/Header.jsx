@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import SideDrawer from "./SideDrawer";
 import AppBar from "@material-ui/core/AppBar";
@@ -25,7 +26,9 @@ export default class Header extends Component {
         position="fixed"
       >
         <ToolBar>
-          <img style={{ height: "60px" }} src={Crown} alt="icon" />
+          <Link to="/">
+            <img style={{ height: "60px" }} src={Crown} alt="icon" />
+          </Link>
           <IconButton
             style={{ marginLeft: "auto" }}
             aria-label="Menu"
