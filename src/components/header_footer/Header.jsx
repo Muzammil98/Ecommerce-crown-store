@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import SideDrawer from "./SideDrawer";
 import AppBar from "@material-ui/core/AppBar";
 import MenuIcon from "@material-ui/icons/Menu";
 import ToolBar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
+import Crown from "../../resources/crown.svg";
 
 export default class Header extends Component {
   state = {
@@ -17,14 +19,14 @@ export default class Header extends Component {
     return (
       <AppBar
         style={{
-          background: "#2f2f2f",
+          background: "#afcee0",
           boxShadow: "none",
           padding: "10px 0px"
         }}
         position="fixed"
       >
         <ToolBar>
-          <h2>Crown Store</h2>
+          <img style={{ height: "60px" }} src={Crown} alt="icon" />
           <IconButton
             style={{ marginLeft: "auto" }}
             aria-label="Menu"
